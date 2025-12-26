@@ -13,7 +13,6 @@ Bu proje, **Bilgisayarlı Görü (Computer Vision)** dersi kapsamında geliştir
 <img width="1919" height="1135" alt="Ekran görüntüsü 2025-12-25 014259" src="https://github.com/user-attachments/assets/12b9ee2d-7140-4d5f-b353-f72432794153" />
 <img width="1919" height="1141" alt="Ekran görüntüsü 2025-12-25 025547" src="https://github.com/user-attachments/assets/9e754e90-85fa-4a7e-b87c-610a6cdaa4ac" />
 
-
 ## ✨ Özellikler
 
 * **🔍 Gerçek Zamanlı Tespit:** YOLOv8n (Nano) modeli ile hızlı ve yüksek doğruluklu nesne tespiti.
@@ -24,6 +23,17 @@ Bu proje, **Bilgisayarlı Görü (Computer Vision)** dersi kapsamında geliştir
     * Tespit edilen toplam nesne sayısı
 * **🎨 Görselleştirme:** Her nesne sınıfı için farklı renkte sınırlayıcı kutular (Bounding Box).
 * **💻 Kullanıcı Arayüzü:** Python Tkinter ile geliştirilmiş modern arayüz.
+
+---
+
+## 🧠 Nasıl Çalışır? (Algoritma)
+
+Bu uygulamada **YOLO (You Only Look Once)** algoritmasının 8. sürümü kullanılmıştır. Süreç şu adımlarla ilerler:
+
+1.  **Giriş:** Kullanıcı bir görüntü yükler.
+2.  **İşleme:** Görüntü, 300x300 boyutuna ölçeklenerek modele verilir.
+3.  **Tahmin:** Model, görüntüyü tek seferde tarar (Single Forward Pass).
+4.  **Çıktı:** 80 farklı COCO sınıfı üzerinden nesneler belirlenir, koordinatlar hesaplanır ve güven skoru **%25'in üzerinde** olanlar ekrana çizilir.
 
 ---
 
